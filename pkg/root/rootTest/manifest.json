@@ -1,0 +1,15 @@
+{
+    "package": "rootTest",
+    "requires":[
+        {
+            "name": "nodejs", 
+            "isOnLosh": false,
+            "pkgManager": "apt",
+            "checkForInstalled": true
+        }
+    ],
+    "versions":[
+        "A3CBB0B2E382E0584BBE396EAC0AAB79F725A3EC18470854F30AD9650B38C77A"
+    ],
+    "latest":"A3CBB0B2E382E0584BBE396EAC0AAB79F725A3EC18470854F30AD9650B38C77A"
+}

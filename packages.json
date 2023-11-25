@@ -1,0 +1,22 @@
+{
+    "url":"http://localhost:8080",
+    "packageCount": 3,
+    "packageDirs":[
+        {
+            "dir":"pkg/basic",
+            "pkgList": "basic",
+            "isRoot":true
+        },
+        {
+            "dir":"pkg/root",
+            "pkgList": "root",
+            "isRoot": true
+        },
+        {
+            "dir":"pkg/user",
+            "pkgList": "user",
+            "isRoot": true
+        }
+        
+    ]
+}

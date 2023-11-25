@@ -1,0 +1,11 @@
+{
+    "pkgManifest": "rootTest",
+    "pkgCompresion": "tar",
+    "pkgFiles":[
+        {
+            "path":"pkgFiles/A3CBB0B2E382E0584BBE396EAC0AAB79F725A3EC18470854F30AD9650B38C77A/package.tar.gz",
+            "tmpPath": "A3CBB0B2E382E0584BBE396EAC0AAB79F725A3EC18470854F30AD9650B38C77A"
+        }   
+    ],
+    "outputPath": "rootTest"
+}
