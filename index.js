@@ -103,15 +103,18 @@ function fetchPackages(packageName){
                         method: "get",
                         url: `${url}/manifests/v1/${latestVersion}.json`
                     }).then(function (res){
+                        console.log("f")
                         var packageManif = res.data
                         //get the file
                         packageLists["pkgFiles"].forEach((pkg)=>{
+                            console.log(pkg)
                             let pkgFileName = pkg["tmpPath"];
                             axios.get({
                                 method: "get",
                                 url: `${url}/${pkg["path"]}`
                             }).then( function(mse){
                                 fs.mkdirSync(`${cacheDir}/${pkgFileName}`)
+                                console.log(`${cacheDir}/${pkgFileName}`)
                                 fs.writeFileSync(`${cacheDir}/${pkgFileName}/package.tar.gz`,mse);
                             }).catch( function (sads) { 
 
