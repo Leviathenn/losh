@@ -5,6 +5,7 @@ const { ChildProcess, exec, spawn } = require('child_process');
 const fs = require('fs');
 const axios = require("axios").default;
 const { userInfo } = require('os');
+const path = require('path');
 const { exit } = require('process');
 function isRoot() {
     return process.getuid() == 0; // UID 0 is always root
@@ -110,7 +111,8 @@ function fetchPackages(packageName){
                                 method: "get",
                                 url: `${url}/${pkg["path"]}`
                             }).then( function(mse){
-                                fs.writeFileSync(`${cacheDir}/`)
+                                fs.mkdirSync(`${cacheDir}/${pkgFileName}`)
+                                fs.writeFileSync(`${cacheDir}/${pkgFileName}/package.tar.gz`,mse);
                             }).catch( function (sads) { 
 
                              })
